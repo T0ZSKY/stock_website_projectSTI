@@ -6,52 +6,38 @@
     <link rel="stylesheet" href="dashboard_style.css">
     <link rel="stylesheet" href="../../assets/css/charts.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
-
 </head>
 <body>
+    <div id="home">
 
-<div id="home">
-
-<h1 class="text animated">Welcome</h1>
-
-</div>
-
-
+        <h1 class="text animated">Welcome</h1>
+        
+        </div>
 <div class="boite">
-
-    
-<div class="box animated" id="my-chart">
-
-    <div class="entrepot">
-        <div class="progression">
-            <span id="pourcentage"></span>
+    <div class="box animated" id="my-chart">
+        <div class="entrepot">
+            <div class="progression">
+                <span id="pourcentage"></span>
+            </div>
+        </div>
+        <h2 class="mois">Pourcentage de remplissage</h2>
+    </div>
+    <div class="box2 animated">
+        <div id="bar-example-4">
+            <table class="charts-css bar show-labels">
+                <caption></caption>
+                <thead><tr><th scope="col"> Year </th> <th scope="col"> Progress </th></tr></thead>
+                <tbody>
+                    <tr><th scope="row"> DR13B </th> <td style="--size: 0;"></td></tr>
+                    <tr><th scope="row"> DR14 </th> <td style="--size: 0;"></td></tr>
+                </tbody>
+            </table>
         </div>
     </div>
-
-    <h2 class="mois">Pourcentage de remplissage</h2>
 </div>
-
-
-    <div class="box2 animated">
-
-
-        <div id="bar-example-4"><table class="charts-css bar show-labels"><caption></caption> <thead><tr><th scope="col"> Year </th> <th scope="col"> Progress </th></tr></thead> <tbody> <tr><th scope="row"> DR13B </th> <td style="--size: 0;"></td></tr> <tr><th scope="row"> DR14 </th> <td style="--size: 0;"></td></tr> </tbody></table></div>
-
-    </div>
-
-</div>
-
 <div class="stock_add">
-
     <button class="btn">Commander du stock</button>
-
-
 </div>
-
-
-
-
-
-    <script src="dashboard_script.js"></script>
+<script src="dashboard_script.js"></script>
 </body>
 </html>
