@@ -1,0 +1,199 @@
+body {
+    background-color: #403060;
+    background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+ }
+
+ @font-face {
+    font-family: 'Nunito';
+    src: url('/assets/fonts/NunitoSans_7pt-Black.ttf') format('ttf'), /* format WOFF2 */
+}
+
+
+#stock {
+    background-color: #403060;
+    background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+
+ .text {
+    color: rgb(91, 91, 91);
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    transition: color 0.3s ease;
+    }
+
+
+
+    
+    /* Animation de survol */
+    .text:hover {
+        color: #fff; /* Changement de couleur au survol */
+    }
+    
+    /* Animation de chargement de la page */
+    .animated {
+        opacity: 0; /* Masque l'élément au chargement de la page */
+        transform: translateY(-20px); /* Déplace l'élément vers le haut */
+        animation: fadeInUp 1s ease forwards; /* Animation de fondu et déplacement vers le bas */
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Animation de survol */
+
+
+
+
+    .box { 
+        border-radius: 30px;
+        width: 300px;
+        height: 300px;
+        background-color: rgb(89, 89, 89);
+        /* margin-left: 60px;
+        margin-top: 60px; */
+        opacity: 0.8;
+        transition: all 0.5s ease;
+        margin-right: 500px;
+    
+    }
+
+.box:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+
+
+
+
+   
+#area-example-1 {
+    width: 100%;
+    max-width: 400px;
+    transform: translateY(35%);
+
+  }
+
+
+  
+  #area-example-1 .area {
+    --aspect-ratio: 21 / 9;
+  }
+  
+
+
+.mois {
+    text-align: center;
+    transform: translateY(80%);
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+  
+  .box2 {
+   
+    border-radius: 30px;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(89, 89, 89);
+    transition: all 0.5s ease;
+    position: relative;
+
+  }
+  
+
+  .boite {
+
+    height: 500px;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box2:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+
+
+#line-example-1 {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  #line-example-1 .line {
+    --aspect-ratio: 21 / 9;
+    background-color: #f6f6f6;
+  }
+
+  #bar-example-4 {
+  transform: translateY(300%);
+ 
+  
+  }
+
+  .temp-class {
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+.btn{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background: linear-gradient(90deg, #000000 0%, #c500cc 100%);
+padding: 10px 30px;
+border: 2px solid #000000;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+}
+
+.btn:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background: linear-gradient(90deg, #000000 0%, #c500cc 100%);
+color: #0066cc;
+border: solid 2px #0066cc;
+}
+
+.stock_add{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+}
