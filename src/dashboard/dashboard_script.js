@@ -450,7 +450,7 @@
 
 // Fonction pour lire le fichier Excel et mettre à jour les styles CSS
 function lireEtMettreAJour() {
-  var fichier = "../../Livre.xlsx?random=" + Math.random(); // Ajout de la chaîne de requête aléatoire
+  var fichier = "../../stock.xlsx?random=" + Math.random(); // Ajout de la chaîne de requête aléatoire
 
   // Lire le fichier Excel
   fetch(fichier)
@@ -470,15 +470,21 @@ function lireEtMettreAJour() {
       .catch(error => console.error('Une erreur s\'est produite lors de la lecture du fichier Excel :', error));
 }
 
-// Fonction pour mettre à jour les styles CSS
+// Fonction pour mettre à jour les styles CSS et afficher le pourcentage de remplissage de l'entrepôt
 function mettreAJourStylesCSS(donnees) {
-  // Supposons que vous ayez un tableau de données où la première colonne contient les valeurs du stock
-  // Vous pouvez diviser chaque valeur par le stock maximal pour les mettre à l'échelle de 0 à 1
   var stockMaximal = 10000; // Définissez ici le stock maximal que vous souhaitez utiliser pour l'échelle
-
-  // Supposons que la première colonne contient les valeurs du stock
   var stockDR13B = donnees[1][1]; // Supposons que la valeur du stock pour DR13B soit dans la deuxième colonne
   var stockDR14 = donnees[2][1]; // Supposons que la valeur du stock pour DR14 soit dans la deuxième colonne
+
+  // Calcul du stock total et du stock maximal total pour les deux produits
+  var stockTotal = (stockDR13B + stockDR14);
+  var stockMaximalTotal = stockMaximal;
+
+  // Calcul du pourcentage de remplissage de l'entrepôt
+  var pourcentageRemplissage = (stockTotal / (stockMaximalTotal * 2)) * 100;
+
+  // Affichage du pourcentage dans la nouvelle div
+  document.getElementById('pourcentage').textContent = pourcentageRemplissage.toFixed(2) + '%';
 
   // Mettre à jour les styles CSS des éléments HTML en fonction des valeurs du stock adaptées à l'échelle de 0 à 1
   document.querySelector('#bar-example-4 tbody tr:nth-child(1) td').style.setProperty('--size', stockDR13B / stockMaximal);

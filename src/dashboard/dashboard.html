@@ -22,9 +22,13 @@
     
 <div class="box animated" id="my-chart">
 
-    <div id="area-example-1"><table class="charts-css area hide-data"><caption> Area Example #1 </caption> <tbody><tr><td style="--start: 0.2; --end: 0.4;"><span class="data"> $ 40K </span></td></tr> <tr><td style="--start: 0.4; --end: 0.8;"><span class="data"> $ 80K </span></td></tr> <tr><td style="--start: 0.8; --end: 0.6;"><span class="data"> $ 60K </span></td></tr> <tr><td style="--start: 0.6; --end: 1.0;"><span class="data"> $ 100K </span></td></tr> <tr><td style="--start: 1.0; --end: 0.3;"><span class="data"> $ 30K </span></td></tr></tbody></table></div>
-    <h2 class="mois">Quantité de feu d'artifice sur le dernier mois</h2>
+    <div class="entrepot">
+        <div class="progression">
+            <span id="pourcentage"></span>
+        </div>
+    </div>
 
+    <h2 class="mois">Pourcentage de remplissage</h2>
 </div>
 
 
@@ -36,12 +40,16 @@
     </div>
 
 </div>
+
 <div class="stock_add">
 
     <button class="btn">Commander du stock</button>
 
 
 </div>
+
+
+
 
 
     <script src="dashboard_script.js"></script>
