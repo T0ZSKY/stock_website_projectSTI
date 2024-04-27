@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", function() {
+  // Vérifier la présence du token dans le localStorage
+  var token = localStorage.getItem('token');
+
+  if (!token) {
+      // Rediriger vers la page de connexion si le token n'est pas présent
+      window.location.href = '../../index.html';
+  }
+});
+
+
 // START BACKGROUND //
 
 
@@ -500,3 +511,5 @@ function mettreAJourStylesCSS(donnees) {
 
 // Actualiser les données toutes les 5 secondes (5000 millisecondes)
 setInterval(lireEtMettreAJour, 2000);
+
+
