@@ -1,3 +1,6 @@
+
+/* EXACTEMENT LE MEME CODE MATHIS POUR QUE IL PASSE  */
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
 
 
@@ -122,10 +125,14 @@ body {
     background-color: rgb(89, 89, 89);
     transition: all 0.5s ease;
     position: relative;
+    
 
   }
   
 
+
+
+  
   .boite {
 
     height: 500px;
@@ -231,3 +238,14 @@ border: solid 2px #0066cc;
   color: white;
   font-size: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
