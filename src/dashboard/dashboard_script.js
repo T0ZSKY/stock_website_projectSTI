@@ -513,3 +513,8 @@ function mettreAJourStylesCSS(donnees) {
 setInterval(lireEtMettreAJour, 2000);
 
 
+function stockadd() {
+
+
+  document.location.href="../add-stock/stock.html"
+}
